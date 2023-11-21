@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logoImage">
+          <img src="kfc-logo.png" alt="" />
+        </div>
+        <div class="input">
+          <label class="Name">Name:</label><input id="inputname" type="text" placeholder="Enter Your Name">
+        <label class="Name">Address:</label><input id="inputaddress" type="text" placeholder="Enter Your Address">
+        
+        <button onclick="addDetails()">Add Details</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      
+      <article class="menu">
+        <h2>Menu</h2>
+        <!-- burger  -->
+        <div class="mainMenuCell">
+          <div class="menuImage">
+            <div class="image">
+              <img id="photo1" src="burger.jpg" alt="" style="width: 10em" />
+            </div>
+            <hr />
+            <div class="caption">
+              <p>king size burger!!! hummm...</p>
+            </div>
+            <hr />
+          </div>
+          <div class="optionsAndDescription">
+            <table>
+              <thead>
+                <tr>
+                  <td class="forPrice">price</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="forPrice">m60.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="button">
+              <button onclick="addOrder('burger', 60.00)">add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- bucket -->
+        <div class="mainMenuCell">
+          <div class="menuImage">
+            <div class="image">
+              <img id="photo2" src="bucket.png" alt="" style="width: 10em" />
+            </div>
+            <hr />
+            <div class="caption">
+              <p>bigger bucket!!! get yours...</p>
+            </div>
+            <hr />
+          </div>
+          <div class="optionsAndDescription">
+            <table>
+              <thead>
+                <tr>
+                  <td class="forPrice">price</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="forPrice">m120.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="button">
+              <button onclick="addOrder('king bucket', 120.00)">add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- streetwise 2-->
+        <div class="mainMenuCell">
+          <div class="menuImage">
+            <div class="image">
+              <img
+                id="photo3"
+                src="streetwise2.jpg"
+                alt=""
+                style="width: 10em"
+              />
+            </div>
+            <hr />
+            <div class="caption">
+              <p>streetwise 2 for individuals!!! get fit on the way...</p>
+            </div>
+            <hr />
+          </div>
+          <div class="optionsAndDescription">
+            <table>
+              <thead>
+                <tr>
+                  <td class="forPrice">price</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="forPrice">m40.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="button">
+              <button onclick="addOrder('streetwise 2', 40.50)">add</button>
+            </div>
+          </div>
+        </div>
+
+        <!--  milkshake-->
+        <div class="mainMenuCell">
+          <div class="menuImage">
+            <div class="image">
+              <img id="photo4" src="milkshake.jpg" alt="" style="width: 10em" />
+            </div>
+            <hr />
+            <div class="caption">
+              <p>
+                strawberry milkshake. buy two and get the prince/princess size
+                for free.
+              </p>
+            </div>
+            <hr />
+          </div>
+          <div class="optionsAndDescription">
+            <table>
+              <thead>
+                <tr>
+                  <td class="forPrice">price</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="forPrice">m25.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="button">
+              <button onclick="addOrder('milkshake', 25.00)">add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- krusher -->
+        <div class="mainMenuCell">
+          <div class="menuImage">
+            <div class="image">
+              <img id="photo5" src="krusher.jpg" alt="" style="width: 10em" />
+            </div>
+            <hr />
+            <div class="caption">
+              <p>krusher snack! soooo goood... with oreo biscouts</p>
+            </div>
+            <hr />
+          </div>
+          <div class="optionsAndDescription">
+            <table>
+              <thead>
+                <tr>
+                  <td class="forPrice">price</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="forPrice">m15.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="button">
+              <button onclick="addOrder('krusher', 15.00)">add</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- streetwise 3 -->
+
+        <div class="mainMenuCell">
+          <div class="menuImage">
+            <div class="image">
+              <img
+                id="photo6"
+                src="streetwise3.jpg"
+                alt=""
+                style="width: 10em"
+              />
+            </div>
+            <hr />
+            <div class="caption">
+              <p>streetwise 3, be full!!</p>
+            </div>
+            <hr />
+          </div>
+          <div class="optionsAndDescription">
+            <table>
+              <thead>
+                <tr>
+                  <td class="forPrice">price</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="forPrice">m50.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="button">
+              <button onclick="addOrder('streetwise 3', 50.00)">add</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="orders">
+        
+      <div class="details">
+        <h2>Order:</h2>
+        <p class="name">
+          
+                  </p>
+                  <p class="address">
+          
+                  </p>
+      </div>
+        <div id="contentBefore">
+          <marquee
+            behavior="scroll"
+            direction="left"
+            loop="3"
+            scrolldelay="100"
+          >
+            <div class="photosToRight">
+              <div class="imageBlack">
+                <img src="blackFriday1.jpg" alt="" />
+              </div>
+              <div class="imageBlack">
+                <img src="blackFriday2.jpg" alt="" />
+              </div>
+            </div>
+          </marquee>
+          <marquee
+            behavior="scroll"
+            direction="right"
+            loop="3"
+            scrolldelay="100"
+          >
+            <div class="photosToLeft">
+              <div class="imageBlack">
+                <img src="blackFriday3.png" alt="" />
+              </div>
+              <div class="imageBlack">
+                <img src="blackFriday4.jpg" alt="" />
+              </div>
+            </div>
+          </marquee>
+        </div>
+      </article>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>
